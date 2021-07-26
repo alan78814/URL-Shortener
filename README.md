@@ -1,0 +1,1 @@
+node generate_short-url.js

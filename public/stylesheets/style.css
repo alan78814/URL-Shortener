@@ -3,6 +3,10 @@
     color:bisque
 }
 
+.short-url {
+    color:blue
+}
+
 /* test */
 /* .container {
     outline:1px solid red;
@@ -10,4 +14,8 @@
 
 .form-group{
     outline:1px solid darkmagenta
+}
+
+.input-group {
+    outline:1px solid black; 
 } */
