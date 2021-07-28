@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 const Url = require('../models/url')
 const generateUrlWord = require('../JS function/generate_short-url')
-const mainUrl = process.env.MAIN_URL || 'http://localhost:3000/'
+const mainUrl = process.env.mainUrl || 'http://localhost:3000/'
 
 router.post('/', async (req, res) => {
   const dbData = await Url.find().lean()
