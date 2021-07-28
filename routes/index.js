@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 const Url = require('../models/url')
 const generateUrlWord = require('../JS function/generate_short-url')
-const mainUrl = 'https://warm-gorge-39572.herokuapp.com/' || 'http://localhost:3000/'
+const mainUrl = process.env.mainUrl || 'http://localhost:3000/'
 
 router.post('/', async (req, res) => {
   const dbData = await Url.find().lean()

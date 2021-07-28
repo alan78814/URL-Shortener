@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
-const mainUrl = process.env.mainUrl || 'mongodb://localhost/short-url-generator'
-mongoose.connect(mainUrl, { useNewUrlParser: true, useUnifiedTopology: true })
+const MONGODB_URI = process.env.mainUrl || 'mongodb://localhost/short-url-generator'
+mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
 const db = mongoose.connection
 
 db.on('error', () => {
