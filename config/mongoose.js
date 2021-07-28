@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const mainUrl = process.env.mainUrl || 'http://localhost:3000/'
+const mainUrl = process.env.mainUrl || 'mongodb://localhost/short-url-generator'
 mongoose.connect(mainUrl, { useNewUrlParser: true, useUnifiedTopology: true })
 const db = mongoose.connection
 
