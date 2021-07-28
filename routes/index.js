@@ -12,8 +12,9 @@ router.post('/', async (req, res) => {
     .lean()
     .then(urls => {
       if (!urls) {
-        let judgement = false
+        let judgement 
         do {
+          judgement = false
           shortUrl = mainUrl + generateUrlWord()
           for (let i = 0; i < dbData.length; i++) {
             if (shortUrl === dbData[i].shortUrl) {
